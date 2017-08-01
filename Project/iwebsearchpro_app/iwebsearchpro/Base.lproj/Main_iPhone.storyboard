@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1mK-Ke-8OW">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mrj-5u-Ybv">
+            <objects>
+                <viewController id="akL-Gt-BZt" customClass="IWPViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="91y-Rc-Tso">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" text="" placeholder="iWebSearch Pro" id="pNF-Jx-xuV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="DQw-Ao-1Uz">
+                                <rect key="frame" x="0.0" y="460" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="8md-7x-cj9">
+                                        <connections>
+                                            <action selector="sitesSearch:" destination="akL-Gt-BZt" id="ggq-Lv-9fi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="n3A-S8-UM3"/>
+                                    <barButtonItem style="plain" systemItem="rewind" id="JKp-Sz-Ply">
+                                        <connections>
+                                            <action selector="goBack" destination="ljk-Bx-mvL" id="1mx-Uf-WvM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ver-hA-3vG"/>
+                                    <barButtonItem systemItem="fastForward" id="hRy-Hj-e4x">
+                                        <connections>
+                                            <action selector="goForward" destination="ljk-Bx-mvL" id="EsG-bz-T5W"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Skz-qo-Zsn"/>
+                                    <barButtonItem systemItem="refresh" id="PBD-t7-FIj">
+                                        <connections>
+                                            <action selector="reload" destination="ljk-Bx-mvL" id="3GV-uN-Jne"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" id="ljk-Bx-mvL">
+                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nAa-B8-JhL">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="9mE-li-Z3U">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="8ie-q7-hqC">
+                                <rect key="frame" x="16" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutPressed:" destination="akL-Gt-BZt" eventType="touchUpInside" id="Udt-Pk-Ddd"/>
+                                    <segue destination="IIK-vd-CAw" kind="push" id="nm4-y6-WS8"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bckButton" destination="JKp-Sz-Ply" id="eS0-RK-bmh"/>
+                        <outlet property="frdButton" destination="hRy-Hj-e4x" id="7P0-19-IEX"/>
+                        <outlet property="infoButton" destination="8ie-q7-hqC" id="PsW-sq-07x"/>
+                        <outlet property="refButton" destination="PBD-t7-FIj" id="uzF-ux-VOU"/>
+                        <outlet property="searchBar" destination="pNF-Jx-xuV" id="HA9-7v-Cez"/>
+                        <outlet property="shareButton" destination="8md-7x-cj9" id="Chc-Ih-r4n"/>
+                        <outlet property="toolShare" destination="DQw-Ao-1Uz" id="mo7-eH-D0n"/>
+                        <outlet property="webView" destination="ljk-Bx-mvL" id="Qdj-3R-Ptc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PfD-20-kXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="-79"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="46w-bD-X5m">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="1mK-Ke-8OW" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Uni-Sc-7t3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="akL-Gt-BZt" kind="relationship" relationship="rootViewController" id="5bz-Wd-is3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxV-3a-Ecd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="-79"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="ixH-lf-XAX">
+            <objects>
+                <tableViewController id="IIK-vd-CAw" customClass="LRNFourthViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="zvf-Ai-2Ze">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                        <sections>
+                            <tableViewSection id="Tbd-ZY-31G">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="96" id="r7z-uc-bRx">
+                                        <rect key="frame" x="0.0" y="35" width="320" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r7z-uc-bRx" id="59u-Jv-IaX">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" id="EO3-8P-ai2">
+                                                    <rect key="frame" x="10" y="9" width="300" height="77"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment>
+                                                            <string key="content">- A comprehensive search engine for most major sites  
+- Easy to use with a single button press </string>
+                                                            <attributes>
+                                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                                    <tabStops/>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Developer" footerTitle="Developer Information" id="vkw-AV-viS">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="9Hc-BU-51g" detailTextLabel="VWi-DQ-q0c" imageView="Y9c-yh-BvB" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="JsA-wm-anO">
+                                        <rect key="frame" x="0.0" y="179" width="320" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JsA-wm-anO" id="y3N-SJ-4EO">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Mokhlas Hussein" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Hc-BU-51g">
+                                                    <rect key="frame" x="87" y="9" width="127" height="20"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VWi-DQ-q0c">
+                                                    <rect key="frame" x="87" y="29" width="172" height="26"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="An Muslim, Arab and Egyptian iOS/WEB/HTML/PHP Developer">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.18823529411764706" green="0.20392156862745098" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Helvetica"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <font key="NSOriginalFont" size="11" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="26.449999999999999">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="26.450000762939453"/>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="iMokhlesID.png" id="Y9c-yh-BvB">
+                                                    <rect key="frame" x="15" y="3" width="57" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" label="iMokhles">
+                                            <accessibilityTraits key="traits" none="YES" image="YES"/>
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="95" id="Tl7-R6-gkf">
+                                        <rect key="frame" x="0.0" y="243" width="320" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tl7-R6-gkf" id="vOP-7P-2N6">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" id="Ani-7q-xxT">
+                                                    <rect key="frame" x="10" y="0.0" width="300" height="94"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Creator of : 1- AnotherWAY Application. 2- Some Other Applications ;). 3- EGYWebViewController. 4- Others ;)">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Sponser" footerTitle="Sponser Information" id="UMp-Ft-Khr">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="HpU-8s-1VV" detailTextLabel="aeR-hv-Mfv" imageView="Zag-dh-VkJ" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="cwC-rQ-1hB">
+                                        <rect key="frame" x="0.0" y="413" width="320" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cwC-rQ-1hB" id="dUa-XO-v7M">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Ahmed Alsuwaidy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HpU-8s-1VV">
+                                                    <rect key="frame" x="87" y="9" width="133" height="20"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aeR-hv-Mfv">
+                                                    <rect key="frame" x="87" y="29" width="158" height="26"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="An Muslim, Arab and Saudi iOS Developer">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="AhmedID.png" id="Zag-dh-VkJ">
+                                                    <rect key="frame" x="15" y="3" width="57" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="IIK-vd-CAw" id="8P3-Yh-I1T"/>
+                            <outlet property="delegate" destination="IIK-vd-CAw" id="GeF-ss-OuU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="wmK-oc-FxF"/>
+                    <connections>
+                        <outlet property="AmhsAbout" destination="cwC-rQ-1hB" id="5Ev-89-Psm"/>
+                        <outlet property="iMokhAbout" destination="JsA-wm-anO" id="HsU-5D-HfU"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DsX-cf-mCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="-79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AhmedID.png" width="57" height="57"/>
+        <image name="iMokhlesID.png" width="57" height="57"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

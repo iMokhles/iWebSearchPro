@@ -1,0 +1,24 @@
+
+/* Class = "IBUITableViewSection"; footerTitle = "Sponser Information"; ObjectID = "EKw-Yy-IlK"; */
+"EKw-Yy-IlK.footerTitle" = "Sponser Information";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Sponser"; ObjectID = "EKw-Yy-IlK"; */
+"EKw-Yy-IlK.headerTitle" = "Sponser";
+
+/* Class = "IBUITableViewSection"; footerTitle = "Developer Information"; ObjectID = "FJP-Xy-ijS"; */
+"FJP-Xy-ijS.footerTitle" = "Developer Information";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Developer"; ObjectID = "FJP-Xy-ijS"; */
+"FJP-Xy-ijS.headerTitle" = "Developer";
+
+/* Class = "IBUILabel"; text = "Sponser Name"; ObjectID = "MHc-rS-37T"; */
+"MHc-rS-37T.text" = "Sponser Name";
+
+/* Class = "IBUISearchBar"; placeholder = "iWebSearch Pro"; ObjectID = "MTg-10-PGQ"; */
+"MTg-10-PGQ.placeholder" = "iWebSearch Pro";
+
+/* Class = "IBUITableViewCell"; accessibilityLabel = "iMokhles"; ObjectID = "gSZ-Fk-jlu"; */
+"gSZ-Fk-jlu.accessibilityLabel" = "iMokhles";
+
+/* Class = "IBUILabel"; text = "Mokhlas Hussein"; ObjectID = "taX-cl-dr2"; */
+"taX-cl-dr2.text" = "Mokhlas Hussein";

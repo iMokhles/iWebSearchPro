@@ -1,0 +1,24 @@
+
+/* Class = "IBUILabel"; text = "Mokhlas Hussein"; ObjectID = "Au8-TV-gi6"; */
+"Au8-TV-gi6.text" = "مخلص حسين";
+
+/* Class = "IBUITableViewSection"; footerTitle = "Sponser Information"; ObjectID = "Qwq-fj-N7O"; */
+"Qwq-fj-N7O.footerTitle" = "معلومات حول راعي التطبيق";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Sponser"; ObjectID = "Qwq-fj-N7O"; */
+"Qwq-fj-N7O.headerTitle" = "راعي التطبيق";
+
+/* Class = "IBUISearchBar"; placeholder = "iWebSearch Pro"; ObjectID = "Tvm-uY-beH"; */
+"Tvm-uY-beH.placeholder" = "iWebSearch Pro";
+
+/* Class = "IBUILabel"; text = "Sponser Name"; ObjectID = "dAs-35-r4s"; */
+"dAs-35-r4s.text" = "Sponser Name";
+
+/* Class = "IBUITableViewCell"; accessibilityLabel = "iMokhles"; ObjectID = "hAA-0o-imm"; */
+"hAA-0o-imm.accessibilityLabel" = "iMokhles";
+
+/* Class = "IBUITableViewSection"; footerTitle = "Developer Information"; ObjectID = "rU9-IM-nLP"; */
+"rU9-IM-nLP.footerTitle" = "معلومات حول مطور التطبيق";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Developer"; ObjectID = "rU9-IM-nLP"; */
+"rU9-IM-nLP.headerTitle" = "مطور التطبيق";
